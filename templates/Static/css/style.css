@@ -54,6 +54,12 @@ h4 {
 
 }
 
+.eqimg {
+  max-width: 100%;
+    width: 4rem;
+    margin-left: 1rem;
+}
+
 .card-image {
   background: url("/files/img/skeleton.gif") no-repeat center center / cover;
   height: 300px;
