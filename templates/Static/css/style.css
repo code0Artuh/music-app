@@ -1,0 +1,107 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+@font-face {
+  font-family: CODE;
+  src: url(/templates/files/font/CODE\ Bold.ttf);
+}
+:root {
+  --primary: #ff0000;
+}
+
+body {
+  height: 100vh;
+  background-image: url("/templates/files/img/back.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#player {
+  background-color: rgb(0, 0, 0);
+  width: 200%;
+  max-width: 400px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  box-shadow: none;
+  margin: 0;
+  font-family: CODE;
+  src: url(/files/font/CODE\ Bold.ttf);
+}
+
+.card-content{
+  background-color: black;
+  text-shadow: purple;
+
+}
+
+
+.change-tracks {background-color: black;}
+
+h4 {
+  font-family: CODE;
+  src: url(/files/font/CODE\ Bold.ttf);
+  color: #bd0606;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+}
+
+.card-image {
+  background: url("/files/img/skeleton.gif") no-repeat center center / cover;
+  height: 300px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#play-pause,
+#previous-track,
+#next-track {
+  background-color: rgb(220, 17, 238);
+}
+
+h5{
+  color: rgb(252, 0, 0);
+}
+
+#player-controls {
+  color: #bd0606;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+#volume-icon {
+  color: red;
+  transform: translateY(3px);
+}
+
+/* Chrome */
+input[type="range"]::-webkit-slider-thumb {
+  background-color: red;
+}
+
+/* Mozilla */
+input[type="range"]::-moz-range-thumb {
+  background-color: red;
+}
+
+/* Internet Explorer e Edge */
+input[type="range"]::-ms-thumb {
+  background-color: red;
+}
+
+.change-tracks {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
